@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Ben's SEO Dashboard</h1>
+    <p>Welcome {{username}}</p>
+    <h3>Available properties</h3>
+    <table>
+    {% for i in items %}
+      <tr>
+        <td><a href="{{i.websiteUrl}}">{{i.websiteUrl}}</a></td>
+        <td>{{i.webPropertyId}}</td>
+        <td><a href="/detail/{{i.id}}">go</a></td>
+      </tr>
+    {% endfor %}
+    </table>
+  </body>
+</html>
+
